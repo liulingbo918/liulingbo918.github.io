@@ -1,0 +1,7 @@
+@inproceedings{liu2019crowd,
+  title={Crowd counting with deep structured scale integration network},
+  author={Liu, Lingbo and Qiu, Zhilin and Li, Guanbin and Liu, Shufan and Ouyang, Wanli and Lin, Liang},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={1774--1783},
+  year={2019}
+}
