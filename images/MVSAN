@@ -1,0 +1,8 @@
+@inproceedings{qiu2019crowd,
+  title={Crowd counting via multi-view scale aggregation networks},
+  author={Qiu, Zhilin and Liu, Lingbo and Li, Guanbin and Wang, Qing and Xiao, Nong and Lin, Liang},
+  booktitle={2019 IEEE International Conference on Multimedia and Expo (ICME)},
+  pages={1498--1503},
+  year={2019},
+  organization={IEEE}
+}
