@@ -1,0 +1,7 @@
+@inproceedings{liu2018crowd,
+  title={Crowd counting using deep recurrent spatial-aware network},
+  author={Liu, Lingbo and Wang, Hongjun and Li, Guanbin and Ouyang, Wanli and Lin, Liang},
+  booktitle={Proceedings of the 27th International Joint Conference on Artificial Intelligence},
+  pages={849--855},
+  year={2018}
+}
