@@ -52,7 +52,7 @@ You are sincerely invited to download and read our proposal [(high resolution, 1
 
 You can click on the following photo to view it online without downloading it.
 
-<div class="">
+<div class="pdf-container">
   <embed src="ICCV2025shenzhen_v1.pdf" type="application/pdf" fullscreen="yes">
 </div>
   
