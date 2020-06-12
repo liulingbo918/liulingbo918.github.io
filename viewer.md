@@ -57,7 +57,7 @@ You can click on the following photo to view it online without downloading it.
     <div style="background:#404040">
         <p style="color:white;text-align:center"><span>Page: <span id="page_num"></span> / <span id="page_count"></span></span></p>
         <div style="text-align:center;margin-top:10px">
-            <canvas id="the-canvas" width="380"></canvas>
+            <canvas id="the-canvas"></canvas>
         </div>
     </div>
     <div style="text-align:center">
@@ -81,6 +81,8 @@ You can click on the following photo to view it online without downloading it.
             scale = 1,
             canvas = document.getElementById('the-canvas'),
             ctx = canvas.getContext('2d');
+            ctx.translate(0.5, 0.5);
+
         function renderPage(num) {
             pageRendering = true;
             pdfDoc.getPage(num).then(function (page) {
@@ -89,7 +91,7 @@ You can click on the following photo to view it online without downloading it.
                 console.log(viewport.width);
                 var desiredWidth = "500";
                 var scale = desiredWidth / viewport.width;
-                scale=2;
+                scale=0.6;
                 var scaledViewport = page.getViewport(scale);
                 //var viewport = page.getViewport(scale);
                 canvas.height = scaledViewport.height;
