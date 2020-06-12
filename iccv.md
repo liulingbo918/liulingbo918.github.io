@@ -7,7 +7,6 @@ Area;
 
 * World-class conference infrastructure secured;
  
- 
 * A pleasant place with nice weather, lots of attractions, and
 sophisticated cuisine;
 
