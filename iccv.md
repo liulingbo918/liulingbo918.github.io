@@ -11,7 +11,7 @@ Area;
 sophisticated cuisine;
 
 * Easy to travel to from around the world, and easy to travel within the Greater Bay area;
-
+ 
 * Affordable, with family support.
 
 
