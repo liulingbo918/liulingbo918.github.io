@@ -1,5 +1,5 @@
 ## Bringing ICCV 2025 to Shenzhen
-
+ 
 ### Executive Summary
 
 * Large computer vision community in Shenzhen and the Greater Bay
