@@ -67,7 +67,7 @@ You can click on the following photo to view it online without downloading it.
         <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
     </div>
     <div style="width:100%;height:100%;background:#404040">
-        <div style=" width:1000px;margin: 0 auto;">
+        <div style=" width:200px;margin: 0 auto;">
             <canvas id="the-canvas"></canvas>
         </div>
     </div>
