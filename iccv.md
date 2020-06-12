@@ -96,7 +96,7 @@ You can click on the following photo to view it online without downloading it.
                 console.log(viewport.width);
                 var desiredWidth = "500";
                 var scale = desiredWidth / viewport.width;
-                scale=0.5;
+                scale=1;
                 var scaledViewport = page.getViewport(scale);
                 //var viewport = page.getViewport(scale);
                 canvas.height = scaledViewport.height;
