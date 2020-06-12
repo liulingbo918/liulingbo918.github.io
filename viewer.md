@@ -35,7 +35,7 @@ Shenzhen is such a dynamic city where traddition and modernity converge.  We sin
 <iframe width="1280" height="715" src="//player.bilibili.com/player.html?aid=19348684&bvid=BV1sW411n7EJ&cid=31553075&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
 
-### Delightful Weather (天时)
+### Delightful Weather (天时~)
 
 The proposed conference is scheduled to be a seven-day event, beginning 14 December 2025 through 20 December 2025. Shenzhen has a very pleasant winter in this period, with an average temperature of 65°F or 18°C in December.  You will have an enjoyable holiday season travel to Shenzhen, and have the chance to visit many dynamic cities such as Gangzhou (29 min by train), Hong Kong (18 min by train) and Macau and Zhuhai (by ferry, or via the HZM bridge, the world's longest sea crossing bridge of 34 miles) in the Greater Bay Area. 
 
