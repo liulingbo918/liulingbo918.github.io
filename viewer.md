@@ -3,6 +3,7 @@
 ### Executive Summary
 
 
+
 * Large computer vision community in Shenzhen and the Greater Bay
 Area; 
 
