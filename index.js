@@ -1,7 +1,7 @@
-let url = 'test-js.pdf';
+let url = 'ICCV2025shenzhen_v1.pdf';
 
 //  workerSrc的路径
-PDFJS.workerSrc = 'js/pdf.worker.js';
+PDFJS.workerSrc = 'pdf.worker.js';
 
 let pdfDoc = null,
   pageNum = 1,
