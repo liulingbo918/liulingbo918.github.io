@@ -67,7 +67,6 @@ You can click on the following photo to view it online without downloading it.
     <div style="text-align:center">
         <button id="prev">上一页</button>
         <button id="next">下一页</button>
-        <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
     </div>
 </div>
 
