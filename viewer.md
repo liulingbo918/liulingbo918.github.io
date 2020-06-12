@@ -48,8 +48,8 @@ We present a diverse organizing team that already covers the key roles, includin
 
 ## Our proposal
 
-You are sincerely invited to download and read our proposal [(high resolution, 15MB)](http://iccv2025shenzhen.github.io/ICCV2025shenzhen.pdf) and [(low resolution, 6MB)](http://iccv2025shenzhen.github.io/ICCV2025shenzhen_compact.pdf) for ICCV 2025 at Shenzhen.
 
+You are sincerely invited to download and read our proposal [(high resolution, 15MB)](http://iccv2025shenzhen.github.io/ICCV2025shenzhen.pdf) and [(low resolution, 6MB)](http://iccv2025shenzhen.github.io/ICCV2025shenzhen_compact.pdf) for ICCV 2025 at Shenzhen.
 You can click on the following photo to view it online without downloading it.
 
 
@@ -71,7 +71,7 @@ You can click on the following photo to view it online without downloading it.
 <script src="pdf.worker.js"></script>
 <script>
         //引入pdf.js之后
-        var url = 'ICCV2025shenzhen_v1.pdf';
+        var url = 'ICCV2025shenzhen.pdf';
         PDFJS.workerSrc = 'pdf.worker.js';
         //定义变量
         var pdfDoc = null,
