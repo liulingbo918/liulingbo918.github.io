@@ -52,10 +52,6 @@ You are sincerely invited to download and read our proposal [(high resolution, 1
 
 You can click on the following photo to view it online without downloading it.
 
-<div class="pdf-container">
-  <embed width="100%" height="400" src="ICCV2025shenzhen_v1.pdf" type="application/pdf" fullscreen="yes">
-</div>
-
 
 <div style="background:#404040">
     <div style="background:#404040">
@@ -74,10 +70,8 @@ You can click on the following photo to view it online without downloading it.
 <script src="pdf.js"></script>
 <script src="pdf.worker.js"></script>
 <script>
-        //引入pdf.js之后
-        var url = 'ICCV2025shenzhen_v1.pdf';
+        var url = 'ICCV2025shenzhen.pdf';
         PDFJS.workerSrc = 'pdf.worker.js';
-        //定义变量
         var pdfDoc = null,
             pageNum = 1,
             pageRendering = false,
@@ -88,19 +82,15 @@ You can click on the following photo to view it online without downloading it.
         function renderPage(num) {
             pageRendering = true;
             pdfDoc.getPage(num).then(function (page) {
-                //设置页面大小
                 var viewport = page.getViewport(1);
                 console.log(viewport.width);
                 var desiredWidth = "500";
                 var scale = desiredWidth / viewport.width;
                 scale=0.65;
                 var scaledViewport = page.getViewport(scale);
-                //var viewport = page.getViewport(scale);
                 canvas.height = scaledViewport.height;
                 canvas.width = scaledViewport.width;
-                //设置背景颜色(无效)
                 canvas.style.backgroundColor = "red";
-                //进行文件读取加载
                 var renderContext = {
                     canvasContext: ctx,
                     viewport: scaledViewport
@@ -115,10 +105,8 @@ You can click on the following photo to view it online without downloading it.
                     }
                 });
             });
-            //显示总页数
             document.getElementById('page_num').textContent = pageNum;
         }
-                        //翻页方法
         function queueRenderPage(num) {
             if (pageRendering) {
                 pageNumPending = num;
@@ -133,7 +121,6 @@ You can click on the following photo to view it online without downloading it.
             pageNum--;
             queueRenderPage(pageNum);
         }
-        //上一页监听
         document.getElementById('prev').addEventListener('click', onPrevPage);
         function onNextPage() {
             if (pageNum >= pdfDoc.numPages) {
@@ -142,7 +129,6 @@ You can click on the following photo to view it online without downloading it.
             pageNum++;
             queueRenderPage(pageNum);
         }
-        //下一页监听
         document.getElementById('next').addEventListener('click', onNextPage);
         PDFJS.getDocument(url).then(function (pdfDoc_) {
             pdfDoc = pdfDoc_;
