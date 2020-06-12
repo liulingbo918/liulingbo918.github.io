@@ -89,7 +89,7 @@ You can click on the following photo to view it online without downloading it.
                 console.log(viewport.width);
                 var desiredWidth = "500";
                 var scale = desiredWidth / viewport.width;
-                scale=0.65;
+                scale=2;
                 var scaledViewport = page.getViewport(scale);
                 //var viewport = page.getViewport(scale);
                 canvas.height = scaledViewport.height;
@@ -144,7 +144,7 @@ You can click on the following photo to view it online without downloading it.
         document.getElementById('next').addEventListener('click', onNextPage);
         PDFJS.getDocument(url).then(function (pdfDoc_) {
             pdfDoc = pdfDoc_;
-            document.getElementById('page_count').textContent = pdfDoc.numPages;
+            //document.getElementById('page_count').textContent = pdfDoc.numPages;
             renderPage(pageNum);
         });
 </script>
