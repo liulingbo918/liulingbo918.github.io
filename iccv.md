@@ -61,7 +61,7 @@ You can click on the following photo to view it online without downloading it.
 </div>
 
 <div class="">
-  <embed width="100%" height="300%" src="ICCV2025shenzhen_v1.pdf" type="application/pdf" fullscreen="yes">
+<iframe width="100%" height="380" src="ICCV2025shenzhen_v1.pdf1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
 
 [<img src="https://iccv2025shenzhen.github.io/index.png" width="638">](https://github.com/iccv2025shenzhen/iccv2025shenzhen.github.io/blob/master/ICCV2025shenzhen.pdf)
