@@ -62,7 +62,7 @@ You can click on the following photo to view it online without downloading it.
 
 <div style="background:#404040">
     <div style="width:100%;height:100%;background:#404040">
-        <div style=" width:200px;margin: 0 auto;">
+        <div style=" width:200px;margin:10px;">
             <canvas id="the-canvas"></canvas>
         </div>
     </div>
@@ -96,6 +96,7 @@ You can click on the following photo to view it online without downloading it.
                 console.log(viewport.width);
                 var desiredWidth = "500";
                 var scale = desiredWidth / viewport.width;
+                scale=0.5;
                 var scaledViewport = page.getViewport(scale);
                 //var viewport = page.getViewport(scale);
                 canvas.height = scaledViewport.height;
