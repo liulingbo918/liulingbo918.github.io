@@ -153,7 +153,7 @@ You can click on the following photo to view it online without downloading it.
         });
 </script>
 
-<div class="video-responsive">
+<div>
 <embed src="https://mozilla.github.io/pdf.js/web/viewer.html" name="frame" width="100%" height="100%"></embed>
 </div>
 
