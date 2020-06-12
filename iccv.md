@@ -60,8 +60,99 @@ You can click on the following photo to view it online without downloading it.
   <embed width="100%" src="ICCV2025shenzhen_v1.pdf" type="application/pdf" fullscreen="yes">
 </div>
 
+<div style="background:#404040">
+    <div>
+        <button id="prev">上一页</button>
+        <button id="next">下一页</button>
+        <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+    </div>
+    <div style="width:100%;height:100%;background:#404040">
+        <div style=" width:1000px;margin: 0 auto;">
+            <canvas id="the-canvas"></canvas>
+        </div>
+    </div>
+</div>
 
-[<img src="https://iccv2025shenzhen.github.io/index.png" width="638">](https://github.com/iccv2025shenzhen/iccv2025shenzhen.github.io/blob/master/ICCV2025shenzhen.pdf)
+<canvas id="the-canvas"></canvas>
+<script src="pdf.js"></script>
+<script src="pdf.worker.js"></script>
+<script>
+        //引入pdf.js之后
+        var url = 'ICCV2025shenzhen_v1.pdf';
+        PDFJS.workerSrc = 'pdf.worker.js';
+        //定义变量
+        var pdfDoc = null,
+            pageNum = 1,
+            pageRendering = false,
+            pageNumPending = null,
+            scale = 1,
+            canvas = document.getElementById('the-canvas'),
+            ctx = canvas.getContext('2d');
+        function renderPage(num) {
+            pageRendering = true;
+            pdfDoc.getPage(num).then(function (page) {
+                //设置页面大小
+                var viewport = page.getViewport(1);
+                console.log(viewport.width);
+                var desiredWidth = "1000";
+                var scale = desiredWidth / viewport.width;
+                var scaledViewport = page.getViewport(scale);
+                //var viewport = page.getViewport(scale);
+                canvas.height = scaledViewport.height;
+                canvas.width = scaledViewport.width;
+                //设置背景颜色(无效)
+                canvas.style.backgroundColor = "red";
+                //进行文件读取加载
+                var renderContext = {
+                    canvasContext: ctx,
+                    viewport: scaledViewport
+                };
+                var renderTask = page.render(renderContext);
+                renderTask.promise.then(function () {
+                    pageRendering = false;
+                    if (pageNumPending !== null) {
+                        // New page rendering is pending
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+            });
+            //显示总页数
+            document.getElementById('page_num').textContent = pageNum;
+        }
+                        //翻页方法
+        function queueRenderPage(num) {
+            if (pageRendering) {
+                pageNumPending = num;
+            } else {
+                renderPage(num);
+            }
+        }
+        function onPrevPage() {
+            if (pageNum <= 1) {
+                return;
+            }
+            pageNum--;
+            queueRenderPage(pageNum);
+        }
+        //上一页监听
+        document.getElementById('prev').addEventListener('click', onPrevPage);
+        function onNextPage() {
+            if (pageNum >= pdfDoc.numPages) {
+                return;
+            }
+            pageNum++;
+            queueRenderPage(pageNum);
+        }
+        //下一页监听
+        document.getElementById('next').addEventListener('click', onNextPage);
+        PDFJS.getDocument(url).then(function (pdfDoc_) {
+            pdfDoc = pdfDoc_;
+            document.getElementById('page_count').textContent = pdfDoc.numPages;
+            renderPage(pageNum);
+        });
+</script>
+
 
 ## Questions?
 
