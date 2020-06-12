@@ -90,7 +90,7 @@ You can click on the following photo to view it online without downloading it.
                 var scaledViewport = page.getViewport(scale);
                 canvas.height = scaledViewport.height;
                 canvas.width = scaledViewport.width;
-                canvas.style.backgroundColor = "red";
+                canvas.style.backgroundColor = "white";
                 var renderContext = {
                     canvasContext: ctx,
                     viewport: scaledViewport
