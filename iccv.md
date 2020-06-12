@@ -56,9 +56,6 @@ You can click on the following photo to view it online without downloading it.
   <embed width="100%" height="400" src="ICCV2025shenzhen_v1.pdf" type="application/pdf" fullscreen="yes">
 </div>
 
-<div class="">
-  <embed width="100%" src="ICCV2025shenzhen_v1.pdf" type="application/pdf" fullscreen="yes">
-</div>
 
 <div style="background:#404040">
     <div style="width:100%;background:#404040">
