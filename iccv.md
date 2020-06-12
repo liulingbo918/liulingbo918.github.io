@@ -59,11 +59,11 @@ You can click on the following photo to view it online without downloading it.
 
 <div style="background:#404040">
     <div style="width:100%;background:#404040">
-        <div style="width:200px;">
+        <div style="width:200px;margin:auto">
             <canvas id="the-canvas"></canvas>
         </div>
     </div>
-    <div>
+    <div style="margin:auto">
         <button id="prev">上一页</button>
         <button id="next">下一页</button>
         <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
