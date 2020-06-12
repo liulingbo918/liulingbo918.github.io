@@ -114,6 +114,8 @@ You can click on the following photo to view it online without downloading it.
             //显示总页数
             document.getElementById('page_num').textContent = pageNum;
         }
+ 
+ 
                         //翻页方法
         function queueRenderPage(num) {
             if (pageRendering) {
