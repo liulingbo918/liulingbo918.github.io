@@ -94,7 +94,7 @@ You can click on the following photo to view it online without downloading it.
                 //设置页面大小
                 var viewport = page.getViewport(1);
                 console.log(viewport.width);
-                var desiredWidth = "300";
+                var desiredWidth = "500";
                 var scale = desiredWidth / viewport.width;
                 var scaledViewport = page.getViewport(scale);
                 //var viewport = page.getViewport(scale);
