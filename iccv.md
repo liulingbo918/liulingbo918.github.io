@@ -61,8 +61,8 @@ You can click on the following photo to view it online without downloading it.
 </div>
 
 <div style="background:#404040">
-    <div style="width:100%;height:100%;background:#404040">
-        <div style=" width:200px;margin:10px;">
+    <div style="width:100%;background:#404040">
+        <div style="width:200px;">
             <canvas id="the-canvas"></canvas>
         </div>
     </div>
