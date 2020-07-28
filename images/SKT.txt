@@ -1,0 +1,6 @@
+@inproceedings{liu2020efficient,
+  title={Efficient Crowd Counting via Structured Knowledge Transfer},
+  author={Liu, Lingbo and Chen, Jiaqi and Wu, Hefeng and Chen, Tianshui and Li, Guanbin and Lin, Liang},
+  booktitle={ACM International Conference on Multimedia},
+  year={2020}
+}
