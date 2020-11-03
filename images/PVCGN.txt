@@ -1,0 +1,7 @@
+@article{liu2020physicalvirtual,
+  title={Physical-Virtual Collaboration Modeling for Intra-and Inter-Station Metro Ridership Prediction},
+  author={Lingbo Liu and Jingwen Chen and Hefeng Wu and Jiajie Zhen and Guanbin Li and Liang Lin},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  year={2020},
+  publisher={IEEE}
+}
