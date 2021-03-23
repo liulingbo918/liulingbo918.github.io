@@ -105,6 +105,20 @@ p{
 					
 					<ul style="float: left;">
 						<p class="second-heading" style="margin-left: -15px;">Introduction</p> 
+						<p>
+						Crowd counting is a fundamental yet challenging task, which desires rich information to generate pixel-wise crowd density maps. 
+						However, most previous methods only used the limited information of RGB images and cannot well discover potential pedestrians in 
+						unconstrained scenarios. In this work, we find that incorporating optical and thermal information can greatly help to recognize 
+						pedestrians. To promote future researches in this field, we introduce a large-scale RGBT Crowd Counting (RGBT-CC) benchmark, 
+						which contains 2,030 pairs of RGB-thermal images with 138,389 annotated people.Furthermore, to facilitate the multimodal crowd 
+						counting, we propose a cross-modal collaborative representation learning framework, which consists of multiple modality-specific 
+						branches, a modality-shared branch, and an Information Aggregation-Distribution Module (IADM) to capture the complementary 
+						information of different modalities fully. Specifically, our IADM incorporates two collaborative information transfers to 
+						dynamically enhance the modality-shared and modality-specific representations with a dual information propagation mechanism. 
+						Extensive experiments conducted on the RGBT-CC benchmark demonstrate the effectiveness of our framework for RGBT crowd counting. 
+						Moreover, the proposed approach is universal for multimodal crowd counting and is also capable to achieve superior performance on 
+						the ShanghaiTechRGBD dataset.
+						</p> 
 
 					</ul>
 
@@ -115,155 +129,14 @@ p{
 					
 					<ul style="float: left;">
 						<p class="second-heading" style="margin-left: -15px;"> Architectures  </p> 
-						
-						<li class="li_style">
-						<span class="span_style_1">
-						<img src="images/RGBT_CC.png" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Cross-Modal Collaborative Representation Learning and a Large-Scale RGBT Benchmark for Crowd Counting.</p>
-						<p class="Text-context" ><b style="font-weight:bold;">Lingbo Liu</b>, Jiaqi Chen, Hefeng Wu, Guanbin Li, Chenglong Li and Liang Lin.</p>
-						<p class="Text-context" >IEEE Conference on Computer Vision and Pattern Recognition (<b style="font-weight:bold;">CVPR</b>), 2021.  <b style="font-weight:bold;">[CCF A]</b></p>
-						<p class="Text-context" >
-							[<a href="https://arxiv.org/abs/2012.04529">PDF</a>] 
-							[<a href="#">Code&Data are coming soon</a>]
-						</p>
-						</span>
-						</li>	
-
-						<li class="li_style">
-						<span class="span_style_1">
-						<img src="images/RLFM.png" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Representative Local Feature Mining for Few-Shot Learning.</p>
-						<p class="Text-context" > Kun Yan, <b style="font-weight:bold;">Lingbo Liu</b>, Jun Hou and Ping Wang.</p>
-						<p class="Text-context" >IEEE International Conference on Acoustics, Speech & Signal Processing (<b style="font-weight:bold;">ICASSP</b>), 2020.  <b style="font-weight:bold;">[CCF B]</b></p>
-						</li>		
-						
-						<li class="li_style">
-						<span class="span_style_1">
-						<img src="images/SKT.png" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Efficient Crowd Counting via Structured Knowledge Transfer.</p>
-						<p class="Text-context" > <b style="font-weight:bold;">Lingbo Liu</b>, Jiaqi Chen, Hefeng Wu, Tianshui Chen, Guanbin Li and Liang Lin.</p>
-						<p class="Text-context" >Proc. of ACM International Conference on Multimedia (<b style="font-weight:bold;">ACM MM</b>), 2020.  <b style="font-weight:bold;">[CCF A]</b></p>
-						<p> 
-							[<a href="https://dl.acm.org/doi/10.1145/3394171.3413938">PDF</a>] 
-							[<a href="images/SKT.txt">BibTeX</a>] 
-							[<a href="https://github.com/HCPLab-SYSU/SKT">Code & Models.</a>] </p>
-						</span>
-						</li>	
-						
-						<li class="li_style">
-						<span class="span_style_1">
-							<img src="images/DSSINet_ICCV.png" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Crowd Counting with Deep Structured Scale Integration Network</p>
-						<p class="Text-context" ><b style="font-weight:bold;">Lingbo Liu</b>, Zhilin Qiu, Guanbin Li, Shufan Liu, Wanli Ouyang and Liang Lin.</p>
-						<p class="Text-context" >IEEE International Conference on Computer Vision (<b style="font-weight:bold;">ICCV</b>), 2019.  <b style="font-weight:bold;">[CCF A]</b></p>
-                                                <p class="Text-context" >
-						[<a href="https://arxiv.org/abs/1908.08692">PDF</a>] 
-					        [<a href="https://github.com/Legion56/Counting-ICCV-DSSINet">Code</a>]
-						</p>
-						</span>
-						</li>
-						
-						
-						<li class="li_style">
-						<span class="span_style_1">
-							<img src="images/ICME_MVSAN.png" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Crowd Counting via Multi-View Scale Aggregation Networks</p>
-						<p class="Text-context" >Zhilin Qiu, <b style="font-weight:bold;">Lingbo Liu</b>, Guanbin Li, Qing Wang, Nong Xiao and Liang Lin.</p>
-						<p class="Text-context" >IEEE International Conference on Multimedia and Expo (<b style="font-weight:bold;">ICME</b>), 2019.  <b style="font-weight:bold;">[CCF B]</b></p>
-                                                <p class="Text-context" >
-						[<a href="#">PDF</a>]
-						</p>
-						</span>
-						</li>
-						
-						
-						<li class="li_style">
-						<span class="span_style_1">
-						<img src="images/ijcai_counting_v1.png" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Crowd Counting using Deep Recurrent Spatial-Aware Network.</p>
-						<p class="Text-context" ><b style="font-weight:bold;">Lingbo Liu</b>, Hongjun Wang, Guanbin Li, Wanli Ouyang and Liang Lin.</p>
-						<p class="Text-context" >Proc. of International Joint Conference on Artificial Intelligence (<b style="font-weight:bold;">IJCAI</b>), 2018.  <b style="font-weight:bold;">[CCF A]</b></p>
-						<p class="Text-context" >
-						[<a href="https://www.ijcai.org/proceedings/2018/0118.pdf">PDF</a>]
-						</p>
-						</span>
-						</li>	
-						
-						
-						<li class="li_style">
-						<span class="span_style_1">
-						<img src="images/ACFM.png" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Attentive Crowd Flow Machines.</p>
-						<p class="Text-context" ><b style="font-weight:bold;">Lingbo Liu</b>, Ruimao Zhang, Jiefeng Peng, Guanbin Li, Bowen Du and Liang Lin.</p>
-						<p class="Text-context" >Proc. of ACM International Conference on Multimedia (<b style="font-weight:bold;">ACM MM</b>), <font color="red">Oral</font>，2018.  <b style="font-weight:bold;">[CCF A]</b></p>
-						<p class="Text-context" >
-						[<a href="https://dl.acm.org/citation.cfm?id=3240681">PDF</a>] 
-						[<a href="https://github.com/liulingbo918/ACFM">Code</a>]
-						</p>
-						</span>
-						</li>	
+				
 					</ul>
 									
 					
 					
-					
 					<ul style="float: left;">
-						<p class="second-heading" style="margin-left: -15px;">Preprints</p>
+						<p class="second-heading" style="margin-left: -15px;">Experiments</p>
 
-						<li class="li_style">
-						<span class="span_style_1">
-						<img src="images/preprint.jpg" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Aerial Images Meet Crowdsourced Trajectories: A New Approach to Robust Road Extraction.</p>
-						<p class="Text-context" ><b style="font-weight:bold;">Lingbo Liu</b>, Zewei Yang, Kuo Wang, Guanbin Li and Liang Lin.</p>
-						<p class="Text-context" >Submit to IEEE Transactions on Neural Networks and Learning Systems (<b style="font-weight:bold;">T-NNLS</b>). </p>	
-						</span>
-						</li>	
-
-
-
-						<li class="li_style">
-						<span class="span_style_1">
-						<img src="images/preprint.jpg" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Dynamic Convolutional Network for Face Sketch Synthesis in the Wild and A New Benchmark.</p>
-						<p class="Text-context" ><b style="font-weight:bold;">Lingbo Liu</b>, Zhilin Qiu, Guanbin Li, Rui Su, Wanli Ouyang and Liang Lin.</p>
-						
-						</span>
-						</li>	
-
-						<li class="li_style">
-						<span class="span_style_1">
-						<img src="images/preprint.jpg" width=95% height=100 class="img_style" >
-						</span>
-						<span class="span_style_2">
-						<p class="Text-context">Cross-Domain Facial Expression Recognition: A Unified Evaluation Benchmark and Adversarial Graph Learning.</p>
-						<p class="Text-context" >Tianshui Chen, Tao Pu, Yuan Xie, Hefeng Wu, <b style="font-weight:bold;">Lingbo Liu</b>, Liang Lin.</p>
-						<p class="Text-context" >
-						[<a href="https://arxiv.org/abs/2008.00923">PDF</a>] 
-						[<a href="https://github.com/HCPLab-SYSU/CD-FER-Benchmark">Code & Dataset</a>]
-						</p>					
-						</span>
-						</li>	
-						
-
-						
 					</ul>
 				        
 				</div>
