@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Lingbo Liu (刘凌波) | RGBT Crowd Counting</title>
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css"> 
+<script src="jquery/jquery-1.9.1.min.js"></script> 
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+<style type="text/css"> 
+  
+body {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+p{
+	text-align:justify; 
+}
+
+
+.Bar_Div{
+	background-color: #F8F8FF; position: fixed; z-index: 99; width: 100%; margin-left: -105px;
+}
+
+.panel-heading {
+    color: inherit;
+    font-weight: 600;
+    transition: all .3s;
+    font-size: 18px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+ }
+ 
+ .second-heading {
+    color: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+ }
+
+ .Text-context {
+    color: inherit;
+    font-weight: 500;
+    font-size: 16px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	margin:4px auto 0 auto;
+ }
+ 
+ .li_style{
+    width:100%; 
+	height:120; 
+	float:left; 
+	list-style-type:none;
+	margin-bottom:10px;
+ }
+ 
+ .span_style_1{
+    float:left; 
+	width:20%; 
+	height:120;"
+}
+ .span_style_2{
+    float:left; 
+	width:80%; 
+	height:120;"
+}
+
+.img_style{
+	box-shadow: 4px 4px 4px #666
+}
+
+.dagger_style{
+	font-family:楷体_GB2312, "Times New Roman";
+}
+
+</style>
+
+</head>
+<body style="background-color: #f5f5f5;">
+
+
+<div class="container">
+	<!-- 导航栏 -->
+	<div class="Bar_Div" style="">
+		<ul class="nav nav-tabs" >
+			<li id='nav-bar-1' style="width: 150px;">&nbsp&nbsp&nbsp&nbsp</li>
+			<li id='nav-bar-1' class=""><a href="index.html">Lingbo Liu （刘凌波）</a></li>
+			<li id='nav-bar-2' class=""><a href="Publication.html">Publications</a></li>
+                        <li id='nav-bar-3' class=""><a href="Dataset.html">Datasets</a></li>
+		</ul>
+	</div>
+	
+
+	
+	<div class="row clearfix" style=" background-color: white;margin:60px -50px 100px -50px;">
+		<div class="col-md-12 column" style=" background-color: white;padding:50px 100px 50px 50px;">
+			
+			<div class="row clearfix" style="margin-left:20px; margin-bottom:30px; float: left; border: solid 2px #F0F8FF;">            
+				<div class="text" style=" text-align:center;"><b style="font-weight:bold;"><font size="6">RGBT Crowd Counting</font></b></div>
+				<div class="col-md-12 column" style="float: left;">
+				      <ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">Paper</p> 
+						<li> <p>
+						Lingbo Liu, Jiaqi Chen, Hefeng Wu, Guanbin Li, Chenglong Li, Liang Lin. "Cross-Modal Collaborative Representation Learning and 
+						a Large-Scale RGBT Benchmark for Crowd Counting." IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021. [<a href="https://arxiv.org/abs/2012.04529">PDF</a>] 
+						</p>
+						</li>
+
+					        <p> Source Code: [<a href="https://github.com/chen-judge/RGBTCrowdCounting">GitHub</a>]                                        </p> 
+						<p> RGBT-CC Dataset: [<a href="https://www.dropbox.com/sh/o4ww2f5tv3nay9n/AAA4CfVMTZcdwsFxFlhwDsSba?dl=0">Dropbox</a>] [<a href="https://pan.baidu.com/s/1ui265kpRGIpTu9kLQrEYgA">BaiduYun (PW: RGBT)</a>] </p>
+
+					</ul>
+					
+					<ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">Introduction</p> 
+						<p>
+						Crowd counting is a fundamental yet challenging task, which desires rich information to generate pixel-wise crowd density maps. 
+						In this work, we find that incorporating optical and thermal information can greatly help to recognize 
+						pedestrians. To promote future researches in this field, we introduce a large-scale RGBT Crowd Counting (RGBT-CC) benchmark, 
+						which contains 2,030 pairs of RGB-thermal images with 138,389 annotated people. Furthermore, to facilitate the multimodal crowd 
+						counting, we propose a cross-modal collaborative representation learning framework, which consists of multiple modality-specific 
+						branches, a modality-shared branch, and an Information Aggregation-Distribution Module (IADM) to capture the complementary 
+						information of different modalities fully. Specifically, our IADM incorporates two collaborative information transfers to 
+						dynamically enhance the modality-shared and modality-specific representations with a dual information propagation mechanism. 
+						Extensive experiments conducted on the RGBT-CC benchmark demonstrate the effectiveness of our framework for RGBT crowd counting. 
+						</p> 
+
+					</ul>
+
+					<p> </p> 
+					<ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">RGBT-CC Benchmark</p> 
+						<p>
+                                                 To promote the future research of 
+						 this task, we propose a large-scale RGBT Crowd Counting (RGBT-CC) benchmark. Specifically, this benchmark consists of 2,030 pairs of 
+						 640x480 RGB-thermal images captured in various scenarios (e.g., malls, streets, playgrounds, train stations, metro stations, etc). 
+						 Among these samples, 1,013 pairs are captured in the light and 1,017 pairs are in the darkness. A total of 138,389 pedestrians are 
+						 marked with point annotations, on average 68 people per image. 
+						 Finally, the proposed RGBT-CC benchmark is randomly divided into three parts: 1030 pairs are used for training, 200 pairs are for 
+						 validation and 800 pairs are for testing. Compared with those Internet-based datasets with serious bias, our RGBT-CC dataset has 
+						 closer crowd density distribution to realistic cities, since our images are captured in urban scenes with various densities. 
+						 Therefore, our dataset has wider applications for urban crowd analysis.
+                                                </p> 
+						<div align="center"> <img src="images/RGBT_CC.png" width=55% class="img_style" > </div>
+					</ul>
+					
+					<p> </p>
+					<ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">Method</p> 
+						
+				                <p> The proposed RGBT crowd counting framework is composed of three parallel backbones and an Information Aggregation-Distribution Module (IADM). 
+						Specifically, the top and bottom backbones are developed for modality-specific (i.e. RGB images and thermal images) representation learning, 
+						while the middle backbone is designed for modality-shared representation learning. To fully exploit the multimodal complementarities, 
+						our IADM dynamically transfers the specific-shared information to collaboratively enhance the modality-specific and modality-shared representations. 
+						Consequently, the final modality-shared feature contains comprehensive information and facilitates generating high-quality crowd density maps. </p>
+						
+						<div align="center"> <img src="images/CVPR2021_IADM.png" width=75% class="img_style" > </div>
+					</ul>
+									
+					<p> </p>
+					<ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">Experiments</p>
+						<div align="center" class=""> <img src="images/CVPR2021_Method_Ablation.png"     width=90% class="" > </div>
+						<p> &nbsp </p> 
+						<div align="center" class=""> <img src="images/CVPR2021_Method_Illumination.png" width=90% class="" > </div>
+						<p> &nbsp </p> 
+						<div align="center" class=""> <img src="images/CVPR2021_Method_SOTA.png"         width=90% class="" > </div>
+					</ul>
+				
+					
+				      <ol style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">More References</p> 
+						<li> 
+						<p> Crowd Counting with Deep Structured Scale Integration Network, ICCV 2019 [<a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Liu_Crowd_Counting_With_Deep_Structured_Scale_Integration_Network_ICCV_2019_paper.pdf">PDF</a>] </p>
+						</li>
+					        <li>
+						<p> Crowd Counting using Deep Recurrent Spatial-Aware Network, IJCAI 2018 [<a href="https://www.ijcai.org/proceedings/2018/0118.pdf">PDF</a>] </p>
+						</li>
+					        <li>
+						<p> Efficient Crowd Counting via Structured Knowledge Transfer, ACM MM 2020 [<a href="https://dl.acm.org/doi/10.1145/3394171.3413938">PDF</a>] </p>
+					        </li>
+					</ol>
+				        
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!--========== FOOTER ==========-->
+        <footer class="footer">
+        <div class="content container">
+              <a href="https://clustrmaps.com/site/1b5vr"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=uySPRWD3Rps1g762brOniQI-L9yUolublky9sMSx_ow&cl=ffffff" /></a>
+        </div>
+        </footer>
+        <!--========== END FOOTER ==========-->
+</div>
+
+</body>
+</html>
