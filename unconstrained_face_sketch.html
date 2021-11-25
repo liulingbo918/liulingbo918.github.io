@@ -102,7 +102,7 @@ p{
 		<div class="col-md-12 column" style=" background-color: white;padding:50px 100px 50px 50px;">
 			
 			<div class="row clearfix" style="margin-left:20px; margin-bottom:30px; float: left; border: solid 2px #F0F8FF;">            
-				<div class="text" style=" text-align:center;"><b style="font-weight:bold;"><font size="6">RGBT Crowd Counting</font></b></div>
+				<div class="text" style=" text-align:center;"><b style="font-weight:bold;"><font size="6">Unconstrained Face Sketch Synthesis</font></b></div>
 				<div class="col-md-12 column" style="float: left;">
 				      <ul style="float: left;">
 						<p class="second-heading" style="margin-left: -15px;">Paper</p> 
@@ -120,32 +120,30 @@ p{
 					<ul style="float: left;">
 						<p class="second-heading" style="margin-left: -15px;">Introduction</p> 
 						<p>
-						Crowd counting is a fundamental yet challenging task, which desires rich information to generate pixel-wise crowd density maps. 
-						In this work, we find that incorporating optical and thermal information can greatly help to recognize 
-						pedestrians. To promote future researches in this field, we introduce a large-scale RGBT Crowd Counting (RGBT-CC) benchmark, 
-						which contains 2,030 pairs of RGB-thermal images with 138,389 annotated people. Furthermore, to facilitate the multimodal crowd 
-						counting, we propose a cross-modal collaborative representation learning framework, which consists of multiple modality-specific 
-						branches, a modality-shared branch, and an Information Aggregation-Distribution Module (IADM) to capture the complementary 
-						information of different modalities fully. Specifically, our IADM incorporates two collaborative information transfers to 
-						dynamically enhance the modality-shared and modality-specific representations with a dual information propagation mechanism. 
-						Extensive experiments conducted on the RGBT-CC benchmark demonstrate the effectiveness of our framework for RGBT crowd counting. 
+						Face sketch generation has attracted much attention in the field of visual computing. However, existing methods either are 
+						limited to constrained conditions or heavily rely on various preprocessing steps to deal with in-the-wild cases. In this paper, 
+						we argue that accurately perceiving facial region and facial components is crucial for unconstrained sketch synthesis. To this end, 
+					        we propose a novel Perception-Adaptive Network (PANet), which can generate high-quality face sketches under unconstrained conditions 
+						in an end-to-end scheme. Specifically, our PANet is composed of: i) a Fully Convolutional Encoder for hierarchical feature extraction, 
+						ii) a Face-Adaptive Perceiving Decoder for extracting potential facial region and handling face variations, and iii) a Component-Adaptive 
+						Perceiving Module for facial component aware feature representation learning. To facilitate further researches of unconstrained face 
+						sketch synthesis, we introduce a new benchmark termed WildSketch, which contains 800 pairs of face photo-sketch with large variations in 
+						pose, expression, ethnic origin, background, and illumination. Extensive experiments demonstrate that the proposed method is capable of 
+						achieving state-of-the-art performance under both constrained and unconstrained conditions. 
 						</p> 
 
 					</ul>
 
 					<p> </p> 
 					<ul style="float: left;">
-						<p class="second-heading" style="margin-left: -15px;">RGBT-CC Benchmark</p> 
+						<p class="second-heading" style="margin-left: -15px;">WildSketch Benchmark</p> 
 						<p>
-                                                 To promote the future research of 
-						 this task, we propose a large-scale RGBT Crowd Counting (RGBT-CC) benchmark. Specifically, this benchmark consists of 2,030 pairs of 
-						 640x480 RGB-thermal images captured in various scenarios (e.g., malls, streets, playgrounds, train stations, metro stations, etc). 
-						 Among these samples, 1,013 pairs are captured in the light and 1,017 pairs are in the darkness. A total of 138,389 pedestrians are 
-						 marked with point annotations, on average 68 people per image. 
-						 Finally, the proposed RGBT-CC benchmark is randomly divided into three parts: 1030 pairs are used for training, 200 pairs are for 
-						 validation and 800 pairs are for testing. Compared with those Internet-based datasets with serious bias, our RGBT-CC dataset has 
-						 closer crowd density distribution to realistic cities, since our images are captured in urban scenes with various densities. 
-						 Therefore, our dataset has wider applications for urban crowd analysis.
+						 In this work, we introduce the first medium-scale dataset for unconstrained face sketch synthesis. 
+						 Our dataset contains 800 pairs of highly-quality face photo-sketch, which is of better quality and larger scale than 
+						 the popular CUHK dataset and AR dataset. 400 pairs are randomly chosen for training and the rest are for testing.. 	
+						 Our WildSketch is much more challenging, as there are more variations in pose, age, expression, background clutters, 
+						and illumination, as shown in Figure 1. We do hope that the proposed WildSketch benchmark 
+						could significantly promote researches in this field.
                                                 </p> 
 						<div align="center"> <img src="images/RGBT_CC.png" width=55% class="img_style" > </div>
 					</ul>
