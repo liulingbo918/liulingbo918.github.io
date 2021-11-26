@@ -140,6 +140,13 @@ p{
 				                <p> In this work, we propose a novel Perception-Adaptive Network (PANet) for face sketch synthesis in the wild. Specifically, our PANet is composed of 
 						i) a Fully Convolutional Encoder for hierarchical feature extraction, ii) a Face-Adaptive Perceiving Decoder for extracting potential facial regions 
 						and handling face variations, and iii) a Component-Adaptive Perceiving Module for facial component aware feature representation learning.
+						First, the FCE takes an unconstrained image as input and extracts the hierarchical features with consecutive standard convolutional layers and pooling layers. 
+						Then, incorporating the deformable convolutional layers, the FAPD dynamically learns the offset of convolution and 
+						implicitly attends the potential face regions to better capture the facial appearance variation. Third, the CAPM divides 
+						the feature map of the unaligned face into multi-scale regions, each of which may contain a specific facial component. 
+						For each region, CAPM dynamically generates the filter weights based on its content with adaptive convolutional layers, and 
+						then convolve its feature with the computed weights to generate a specialized feature for the potential facial component in this region. 
+						Finally, the filtered features of all regions are combined to synthesize a high-quality sketch.
 						</p>
 			
 						<div align="center"> <img src="images/PANet.png" width=90% class="img_style" > </div>
