@@ -102,51 +102,43 @@ p{
 		<div class="col-md-12 column" style=" background-color: white;padding:50px 100px 50px 50px;">
 			
 			<div class="row clearfix" style="margin-left:20px; margin-bottom:30px; float: left; border: solid 2px #F0F8FF;">            
-				<div class="text" style=" text-align:center;"><b style="font-weight:bold;"><font size="6">Aerial Images Meet Crowdsourced Trajectories</font></b></div>
+				<div class="text" style=" text-align:center;"><b style="font-weight:bold;"><font size="6">Multimodal Road Extraction</font></b></div>
 				<div class="col-md-12 column" style="float: left;">
 				      <ul style="float: left;">
 						<p class="second-heading" style="margin-left: -15px;">Paper</p> 
-						<li> <p>
-						Nie Lin, Lingbo Liu#, Zhengtao Wu, Wenxiong Kang. "Unconstrained Face Sketch Synthesis via Perception-Adaptive Network and A New Benchmark".  
-						</p>
-						</li>
-
+						<p> 'Aerial Images Meet Crowdsourced Trajectories: A New Approach to Robust Road Extraction', </p>
+						<p> Lingbo Liu, Zewei Yang, Guanbin Li, Kuo Wang, Tianshui Chen and Liang Lin,  </p>
+                                                <p> IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2022 </p>
+					         <p> &nbsp </p> 
 					        <p> Source Code: [<a href="#">Coming Soon</a>]                                        </p> 
-						<p> WildSketch Dataset: [<a href="#">Coming Soon</a>] </p>
-						<p> Results: [<a href="https://www.dropbox.com/sh/qorkin25vce47w1/AAARpX526Eu8b4qgNXNOxGMca?dl=0">Dropbox</a>] [<a href="https://pan.baidu.com/s/1li0QLIwZ1UJgfRe2g4YBkg">BaiduYun (PW: face)</a>] </p>
-
 					</ul>
 					
 
 
 					<p> </p> 
 					<ul style="float: left;">
-						<p class="second-heading" style="margin-left: -15px;">WildSketch Benchmark</p> 
-						<p>
-						 In this work, we introduce the first medium-scale dataset for unconstrained face sketch synthesis. 
-						 Our dataset contains 800 pairs of highly-aligned face photo-sketch, which is of better quality and larger scale than 
-						 the popular CUHK dataset and AR dataset. More specifically, 400 pairs are randomly chosen for training and the rest are for testing. 	
-						 Our WildSketch is much more challenging, as there are more variations in pose, age, expression, background clutters, 
-						and illumination, as shown below. We do hope that the proposed WildSketch benchmark 
-						could significantly promote researches in the field of face sketch synthesis.
-                                                </p> 
-						<div align="center"> <img src="images/WildSketch.png" width=65% class="img_style" > </div>
+						<p class="second-heading" style="margin-left: -15px;">Abstract</p> 
+						<p> In this work, we focus on a challenging task of land remote sensing analysis, i.e., automatic extraction of traffic roads 
+					    from remote sensing data. Nevertheless, conventional methods either only utilized the limited information of 
+					    aerial images, or simply fused multimodal information (e.g., vehicle trajectories), thus cannot well recognize unconstrained roads. 
+					    To facilitate this problem, we introduce a novel neural network framework termed Cross-Modal Message Propagation Network (CMMPNet), 
+					    which fully benefits the complementary different modal data (i.e., aerial images and crowdsourced trajectories). Extensive experiments 
+					    on three real-world benchmarks demonstrate the effectiveness of our CMMPNet for robust road extraction benefiting from 
+					    blending different modal data, either using image and trajectory data or image and Lidar data. </p>
+					    
+					    <div align="center"> <img src="images/PANet.png" width=90% class="img_style" > </div>
 					</ul>
 					
 					<p> </p>
 					<ul style="float: left;">
 						<p class="second-heading" style="margin-left: -15px;">Method</p> 
 						
-				                <p> In this work, we propose a novel Perception-Adaptive Network (PANet) for face sketch synthesis in the wild. Specifically, our PANet is composed of 
-						i) a Fully Convolutional Encoder for hierarchical feature extraction, ii) a Face-Adaptive Perceiving Decoder for extracting potential facial regions 
-						and handling face variations, and iii) a Component-Adaptive Perceiving Module for facial component aware feature representation learning.
-						First, the FCE takes an unconstrained image as input and extracts the hierarchical features with consecutive standard convolutional layers and pooling layers. 
-						Then, incorporating the deformable convolutional layers, the FAPD dynamically learns the offset of convolution and 
-						implicitly attends the potential face regions to better capture the facial appearance variation. Third, the CAPM divides 
-						the feature map of the unaligned face into multi-scale regions, each of which may contain a specific facial component. 
-						For each region, CAPM dynamically generates the filter weights based on its content with adaptive convolutional layers, and 
-						then convolve its feature with the computed weights to generate a specialized feature for the potential facial component in this region. 
-						Finally, the filtered features of all regions are combined to synthesize a high-quality sketch.
+				                <p> We propose a novel Cross-Modal Message Propagation Network (CMMPNet) for multimodal road extraction. 
+						Specifically, our CMMPNet is composed of (i) two deep AutoEncoders that take an aerial image and a trajectory 
+						heat-map respectively to learn modality-specific features, and (ii) a Dual Enhancement Module (DEM) that 
+						dynamically propagates the non-local messages (NLM, i.e, local one and global one) of every modality with gated functions to 
+						enhance the representation of another modality. The final features of the image and trajectory heat-map are concatenated 
+						to generate a traffic road map.
 						</p>
 			
 						<div align="center"> <img src="images/PANet.png" width=90% class="img_style" > </div>
@@ -156,6 +148,9 @@ p{
 					<ul style="float: left;">
 						<p class="second-heading" style="margin-left: -15px;">Experiments</p>
 						<div align="center" class=""> <img src="images/Result1.png"     width=90% class="" > </div>
+						<p> &nbsp </p> 
+						<div align="center" class=""> <img src="images/Result2.png" width=90% class="" > </div>
+						
 						<p> &nbsp </p> 
 						<div align="center" class=""> <img src="images/Result2.png" width=90% class="" > </div>
 					</ul>
