@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Lingbo Liu (刘凌波) | RGBT Crowd Counting</title>
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css"> 
+<script src="jquery/jquery-1.9.1.min.js"></script> 
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+<style type="text/css"> 
+  
+body {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+p{
+	text-align:justify; 
+}
+
+
+.Bar_Div{
+	background-color: #F8F8FF; position: fixed; z-index: 99; width: 100%; margin-left: -105px;
+}
+
+.panel-heading {
+    color: inherit;
+    font-weight: 600;
+    transition: all .3s;
+    font-size: 18px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+ }
+ 
+ .second-heading {
+    color: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+ }
+
+ .Text-context {
+    color: inherit;
+    font-weight: 500;
+    font-size: 16px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	margin:4px auto 0 auto;
+ }
+ 
+ .li_style{
+    width:100%; 
+	height:120; 
+	float:left; 
+	list-style-type:none;
+	margin-bottom:10px;
+ }
+ 
+ .span_style_1{
+    float:left; 
+	width:20%; 
+	height:120;"
+}
+ .span_style_2{
+    float:left; 
+	width:80%; 
+	height:120;"
+}
+
+.img_style{
+	box-shadow: 4px 4px 4px #666
+}
+
+.dagger_style{
+	font-family:楷体_GB2312, "Times New Roman";
+}
+
+</style>
+
+</head>
+<body style="background-color: #f5f5f5;">
+
+
+<div class="container">
+	<!-- 导航栏 -->
+	<div class="Bar_Div" style="">
+		<ul class="nav nav-tabs" >
+			<li id='nav-bar-1' style="width: 150px;">&nbsp&nbsp&nbsp&nbsp</li>
+			<li id='nav-bar-1' class=""><a href="index.html">Lingbo Liu （刘凌波）</a></li>
+			<li id='nav-bar-2' class=""><a href="Publication.html">Publications</a></li>
+                        <li id='nav-bar-3' class=""><a href="Dataset.html">Datasets</a></li>
+		</ul>
+	</div>
+	
+
+	
+	<div class="row clearfix" style=" background-color: white;margin:60px -50px 100px -50px;">
+		<div class="col-md-12 column" style=" background-color: white;padding:50px 100px 50px 50px;">
+			
+			<div class="row clearfix" style="margin-left:20px; margin-bottom:30px; float: left; border: solid 2px #F0F8FF;">            
+				<div class="text" style=" text-align:center;"><b style="font-weight:bold;"><font size="6">Aerial Images Meet Crowdsourced Trajectories</font></b></div>
+				<div class="col-md-12 column" style="float: left;">
+				      <ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">Paper</p> 
+						<li> <p>
+						Nie Lin, Lingbo Liu#, Zhengtao Wu, Wenxiong Kang. "Unconstrained Face Sketch Synthesis via Perception-Adaptive Network and A New Benchmark".  
+						</p>
+						</li>
+
+					        <p> Source Code: [<a href="#">Coming Soon</a>]                                        </p> 
+						<p> WildSketch Dataset: [<a href="#">Coming Soon</a>] </p>
+						<p> Results: [<a href="https://www.dropbox.com/sh/qorkin25vce47w1/AAARpX526Eu8b4qgNXNOxGMca?dl=0">Dropbox</a>] [<a href="https://pan.baidu.com/s/1li0QLIwZ1UJgfRe2g4YBkg">BaiduYun (PW: face)</a>] </p>
+
+					</ul>
+					
+
+
+					<p> </p> 
+					<ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">WildSketch Benchmark</p> 
+						<p>
+						 In this work, we introduce the first medium-scale dataset for unconstrained face sketch synthesis. 
+						 Our dataset contains 800 pairs of highly-aligned face photo-sketch, which is of better quality and larger scale than 
+						 the popular CUHK dataset and AR dataset. More specifically, 400 pairs are randomly chosen for training and the rest are for testing. 	
+						 Our WildSketch is much more challenging, as there are more variations in pose, age, expression, background clutters, 
+						and illumination, as shown below. We do hope that the proposed WildSketch benchmark 
+						could significantly promote researches in the field of face sketch synthesis.
+                                                </p> 
+						<div align="center"> <img src="images/WildSketch.png" width=65% class="img_style" > </div>
+					</ul>
+					
+					<p> </p>
+					<ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">Method</p> 
+						
+				                <p> In this work, we propose a novel Perception-Adaptive Network (PANet) for face sketch synthesis in the wild. Specifically, our PANet is composed of 
+						i) a Fully Convolutional Encoder for hierarchical feature extraction, ii) a Face-Adaptive Perceiving Decoder for extracting potential facial regions 
+						and handling face variations, and iii) a Component-Adaptive Perceiving Module for facial component aware feature representation learning.
+						First, the FCE takes an unconstrained image as input and extracts the hierarchical features with consecutive standard convolutional layers and pooling layers. 
+						Then, incorporating the deformable convolutional layers, the FAPD dynamically learns the offset of convolution and 
+						implicitly attends the potential face regions to better capture the facial appearance variation. Third, the CAPM divides 
+						the feature map of the unaligned face into multi-scale regions, each of which may contain a specific facial component. 
+						For each region, CAPM dynamically generates the filter weights based on its content with adaptive convolutional layers, and 
+						then convolve its feature with the computed weights to generate a specialized feature for the potential facial component in this region. 
+						Finally, the filtered features of all regions are combined to synthesize a high-quality sketch.
+						</p>
+			
+						<div align="center"> <img src="images/PANet.png" width=90% class="img_style" > </div>
+					</ul>
+									
+					<p> </p>
+					<ul style="float: left;">
+						<p class="second-heading" style="margin-left: -15px;">Experiments</p>
+						<div align="center" class=""> <img src="images/Result1.png"     width=90% class="" > </div>
+						<p> &nbsp </p> 
+						<div align="center" class=""> <img src="images/Result2.png" width=90% class="" > </div>
+					</ul>
+				
+					
+			
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!--========== FOOTER ==========-->
+        <footer class="footer">
+        <div class="content container">
+              <a href="https://clustrmaps.com/site/1b5vr"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=uySPRWD3Rps1g762brOniQI-L9yUolublky9sMSx_ow&cl=ffffff" /></a>
+        </div>
+        </footer>
+        <!--========== END FOOTER ==========-->
+</div>
+
+</body>
+</html>
